@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Music Chart</title>
+      <style>
+        body{
+          background-color: #03f0fc;
+        }
+      </style>
+    <script src="https://cdn.plot.ly/plotly-3.0.1.min.js" charset="utf-8"></script>
+  </head>
+  
+  <body>
+    <center>
+      <h1>My Favorite Drake songs:</h1>
+      <div id="plot"></div>
+      <script>
+        var songs =["What Did I Miss?","NOKIA", "Passionfruit"];
+        var views =[5890392, 31615676, 258744109];
+        var trace= {
+        x: songs,
+          y: views,
+          type: "bar"
+        };
+        var data= [trace];
+        Plotly.newplot("plot",data);
+      </script>
+    </center>
+    <footer>
+      <center>
+        <hr>
+        <p><em>Bhavesh's website &copy; 2025</em></p>
+      </center>
+    </footer>
+  </body>
+
+</html>
